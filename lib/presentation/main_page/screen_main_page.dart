@@ -30,15 +30,3 @@ class ScreenMainPage extends StatelessWidget {
     );
   }
 }
-
-// class ScreenMainPage extends StatelessWidget {
-//   const ScreenMainPage({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Scaffold(
-//       body: Text('MainPage'),
-//       bottomNavigationBar: BottomNavigationWidget(),
-//     );
-//   }
-// }
