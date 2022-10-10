@@ -12,13 +12,13 @@ class BottomNavigationWidget extends StatelessWidget {
         valueListenable: indexChangeNotifier,
         builder: (context, int newIndex, _) {
           return BottomNavigationBar(
+            currentIndex: newIndex,
             type: BottomNavigationBarType.fixed,
             selectedIconTheme: const IconThemeData(color: Colors.white),
             selectedItemColor: Colors.white,
             unselectedIconTheme: const IconThemeData(color: Colors.grey),
             unselectedItemColor: Colors.grey,
             backgroundColor: backgroundColor,
-            currentIndex: newIndex,
             onTap: (index) {
               indexChangeNotifier.value = index;
             },
