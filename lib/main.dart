@@ -13,11 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Netflix App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primarySwatch: Colors.blue,
           backgroundColor: Colors.black,
           scaffoldBackgroundColor: Colors.black,
-          fontFamily: GoogleFonts.martelSans().fontFamily,
+          fontFamily: GoogleFonts.montserrat().fontFamily,
           textTheme: const TextTheme(
               bodyText1: TextStyle(color: Colors.white),
               bodyText2: TextStyle(color: Colors.white))),

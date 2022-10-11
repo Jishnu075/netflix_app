@@ -20,7 +20,7 @@ class ScreenDownloads extends StatelessWidget {
         itemCount: _widgetList.length,
         itemBuilder: (context, index) => _widgetList[index],
         separatorBuilder: ((context, index) => const SizedBox(
-              height: 30,
+              height: 35,
             )),
       ),
     );
