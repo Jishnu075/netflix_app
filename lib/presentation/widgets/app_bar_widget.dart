@@ -10,23 +10,23 @@ class AppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        kwidth,
+        kWidth,
         Text(
           title,
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
         ),
         const Spacer(),
         const Icon(
           Icons.cast,
           color: kWhiteColor,
         ),
-        kwidth,
+        kWidth,
         Container(
           color: Colors.blue,
           height: 35,
           width: 35,
         ),
-        kwidth,
+        kWidth,
       ],
     );
   }
