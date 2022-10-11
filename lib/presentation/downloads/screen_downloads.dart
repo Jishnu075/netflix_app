@@ -193,9 +193,10 @@ class DownloadsImageWidget extends StatelessWidget {
         width: size.width * widthRatio,
         height: size.height * heightRatio,
         decoration: BoxDecoration(
-            color: kblackColor,
-            borderRadius: BorderRadius.circular(5),
-            image: DecorationImage(image: NetworkImage(image))),
+          color: kblackColor,
+          borderRadius: BorderRadius.circular(5),
+          image: DecorationImage(image: NetworkImage(image), fit: BoxFit.cover),
+        ),
       ),
     );
   }
