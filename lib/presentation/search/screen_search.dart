@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix_app/core/colors.dart';
 import 'package:netflix_app/presentation/main_page/widgets/bottom_nav.dart';
 import 'package:netflix_app/presentation/search/widgets/search_idle.dart';
+import 'package:netflix_app/presentation/search/widgets/search_result.dart';
 import 'widgets/text_title.dart';
 
 class ScreenSearch extends StatelessWidget {
@@ -34,7 +35,11 @@ class ScreenSearch extends StatelessWidget {
                     )),
                 style: TextStyle(color: kWhiteColor),
               ),
-              Expanded(child: SearchIdle())
+              Expanded(
+                //NB : TWO SCREENS ARE TO BE DISPLAYED, SO RE-EDIT THIS AREA ACCORDINGLY LATER
+                // child: SearchIdle(),
+                child: SearchResultWidget(),
+              )
             ],
           ),
         ),
